@@ -4,6 +4,9 @@ Simple Web application for creating investigation corkboards
 - Deploy link: https://artex112.github.io/Detectives-Corkboard/
 - Repository link:  https://github.com/Artex112/Detectives-Corkboard
 
+## Made with
+Plain Javascript, HTML and some CSS
+
 ## Features
 - Create Notes with text formatting
 - Upload Pictures with labels
