@@ -1,8 +1,13 @@
 # Detectives Corkboard
 Simple Web application for creating investigation corkboards
 
+<p align="left">
+<img width="200" src="https://github.com/Artex112/Detectives-Corkboard/assets/69194725/8c47f5c4-9092-4fcf-8238-f51b5fd2aedc" alt="Detective logo">
+<p/>
+
 - Deploy link: https://artex112.github.io/Detectives-Corkboard/
 - Repository link:  https://github.com/Artex112/Detectives-Corkboard
+
 
 ## Made with
 Plain Javascript, HTML and some CSS
