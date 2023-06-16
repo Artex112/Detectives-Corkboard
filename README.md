@@ -19,7 +19,7 @@ Plain Javascript, HTML and some CSS
 - Looks just like a real corkboard!
 
 ## Roadmap
-- [ ] Add Changelog Tab
+- [x] Add Changelog Tab
 - [ ] Add custom colors for text and notes
 - [ ] Add Zooming and panning
 - [ ] Add Advanced Settings menu for advanced customization
