@@ -5,9 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="keywords" content="Corkboard,Detective,Organization,Investigation,Web,Open-source,opensource,board">
-    <meta name="google-site-verification" content="mSbcxm9GLHUjnYsv2aF-yzWRslwU6Mey7lcsKr1fseg" />
     <title>Detective's Corkboard</title>
-    <meta name="description" content="Simple Web application for creating investigation corkboards">
     <link rel="stylesheet" href="style.css">
     <link rel="shortcut icon" href="assets/favicons/favicon.svg" type="image/x-icon">
 
@@ -63,8 +61,33 @@
             </li>      
             <li class="menu_buttons" onclick="RemoveItem(['Notes','Pictures','String'])">Remove Item</li>
             <li class="menu_buttons" onclick="ConnectString(['Notes','Pictures'])">Connect String</li>
+            <li class="deco_line"></li>
+            <li class="menu_buttons" onclick="setVisibility(`#settings_wrapper`,'visible')">Settings</li>   
         </ul>
     </div>
+
+    <div id="settings_wrapper">
+        <ul id="settings">   
+           <span class="close_wrapper"><span class="close" onclick="setVisibility(`#settings_wrapper`,'hidden')"><img class="close_button" src="assets/icons_settings/cross_close.svg" draggable="false"></img><p>Close</p></span></span>
+            <li class="setting_option menu_buttons" onclick="setVisibility(`#settings_wrapper #changelog`,'visible')"> Changelog </li>
+            <li class="deco_line"></li>          
+            <li class="setting_option menu_buttons"> Im still working on this one - Sorry! </li>
+        </ul>
+        <ul id="changelog">
+            <span class="close_wrapper"><span class="close" onclick="setVisibility(`#settings_wrapper #changelog`,'hidden')"><img class="close_button" src="assets/icons_settings/cross_close.svg" draggable="false"></img><p>Close</p></span></span>
+            <li class="deco_line" id="title_wrapper"></li>
+            <!-- For now will work, i got to add some kind of system to send those without need of using HTML -->
+            <li class="log">
+                <p>- 16.06.2023 -</p>
+                <ul>
+                    <li>Added Changelog</li>
+                    <li>Added Settings menu</li>
+                    <li>tiny bit of tweaks here and there</li>
+                </ul>
+            </li>
+        </ul>
+    </div>
+
     <script src="scripts/picture.js"></script>
     <script src="scripts/note.js"></script>
     <script src="scripts/menu.js"></script>   

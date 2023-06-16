@@ -15,6 +15,11 @@ document.addEventListener("contextmenu", e => { //open menu on right click
 
 document.addEventListener("click", () => contextMenu.style.visibility = "hidden") //close menu on left click
 
+function setVisibility(selector,state) {
+    const win = document.querySelector(selector)
+    win.style.visibility = state
+}
+
 function appendItem(item, attachListeners) {
     const board = document.getElementById("container")
     let tempNode = document.querySelector(item).cloneNode(true)
