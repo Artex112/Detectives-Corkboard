@@ -42,6 +42,16 @@
 
     <div class="String">
     </div>
+
+    <li class="log" style="visibility: hidden; position: absolute;">
+        <p>- 00.00.0000 -</p>
+        <ul>
+            <li>1</li>
+            <li>2</li>
+            <li>3</li>
+        </ul>
+    </li>
+
     <!-- end of templates -->
 
     <div id="container">
@@ -76,18 +86,11 @@
         <ul id="changelog">
             <span class="close_wrapper"><span class="close" onclick="setVisibility(`#settings_wrapper #changelog`,'hidden')"><img class="close_button" src="assets/icons_settings/cross_close.svg" draggable="false"></img><p>Close</p></span></span>
             <li class="deco_line" id="title_wrapper"></li>
-            <!-- For now will work, i got to add some kind of system to send those without need of using HTML -->
-            <li class="log">
-                <p>- 16.06.2023 -</p>
-                <ul>
-                    <li>Added Changelog</li>
-                    <li>Added Settings menu</li>
-                    <li>tiny bit of tweaks here and there</li>
-                </ul>
-            </li>
+            <ul id="logs"></ul>
         </ul>
     </div>
 
+    <script src="scripts/changelog.js"></script>
     <script src="scripts/picture.js"></script>
     <script src="scripts/note.js"></script>
     <script src="scripts/menu.js"></script>   

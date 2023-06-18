@@ -24,6 +24,7 @@ body {
 
 ::-webkit-scrollbar-thumb {
     background: #b1b36d;
+    border-radius: 2px;
 }
 
 
@@ -164,11 +165,31 @@ body {
     padding-left: 35px;
 }
 
+#logs {
+    height: auto;
+    width: auto;
+    max-height: 90%;
+    overflow-y: auto;
+    overflow-x: hidden;
+    padding: 0px;
+    padding-right: 3px;
+    padding-left: 32px;
+    margin-left: -32px;
+}
+
 .log {
     border: #767749 1px solid;
+    border-radius: 3px;
+    background-color: #feffab;
     list-style-type:changelog;
-    padding-top: 0px;
+    list-style-position:outside;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.312);
+    padding-bottom: 10px;
     margin-bottom: 5px;
+}
+
+.log::marker {
+    font-size: larger;
 }
 
 .log ul {
@@ -177,6 +198,10 @@ body {
 
 .log p{
    margin: 5px;
+   margin-left: 30px;
+   font-weight: bold;
+   text-decoration: underline;
+   text-decoration-color:#b1b36d;
 }
 
 #title_wrapper {
