@@ -16,8 +16,8 @@ document.addEventListener("contextmenu", e => { //open menu on right click
 document.addEventListener("click", () => contextMenu.style.visibility = "hidden") //close menu on left click
 
 function setVisibility(selector,state) {
-    const win = document.querySelector(selector)
-    win.style.visibility = state
+    const floatingWindow = document.querySelector(selector)
+    floatingWindow.style.visibility = state
 }
 
 function appendItem(item, attachListeners) {

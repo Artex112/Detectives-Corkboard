@@ -113,39 +113,22 @@ function makeLine(item, tempNode, x2, y2) { //Connects a div between 2 elements 
 
 function preventFocusLoss(item) {
     //Prevent Focus loss on button press
-    for (btn of item) {
-        btn.addEventListener("mousedown", function(e) {
+    for (let button of item) {
+        button.addEventListener("mousedown", function(e) {
             e.preventDefault();
         })
     }
 }
 
-function textFormat(btns, item) {
-    const text = item.children[1].children[0]
-        //Do different thing depending on buttons title 
-    for (btn of btns) {
-        const img = btn.children[0]
-        const type = img.getAttribute("title")
-        btn.addEventListener("click", function() {
-            img.classList.toggle("toggled_text_button");
-            switch (type) {
-                case "Italic":
-                    text.classList.toggle("italic")
-                    img.classList.toggle("italic");
-                    break;
-                case "Bold":
-                    text.classList.toggle("bold");
-                    img.classList.toggle("bold");
-                    break;
-                case "Strikethrough":
-                    text.classList.toggle("strike");
-                    img.classList.toggle("strike");
-                    break;
-                case "Underline":
-                    text.classList.toggle("underline");
-                    img.classList.toggle("underline");
-                    break;
-            }
+function textFormat(textFormattingButtons, item) {
+    const text = item.children[1].children[0] //Notes -> text_area -> text_format
+    for (let button of textFormattingButtons) { //Iterate over each button, read its title and give it CSS Class with the same name as the title
+        const buttonIcon = button.children[0]
+        const buttonTitle = buttonIcon.getAttribute("title")
+        button.addEventListener("click", function() {
+            buttonIcon.classList.toggle("toggled_text_button");
+            buttonIcon.classList.toggle(buttonTitle.toLowerCase())
+            text.classList.toggle(buttonTitle.toLowerCase())   
         })
     }
 }

@@ -547,7 +547,7 @@ body {
     content: url(assets/icons_format/second_color/bold.png);
 }
 
-.strike {
+.strikethrough {
     text-decoration: line-through;
     content: url(assets/icons_format/second_color/strikethrough.png);
 }
