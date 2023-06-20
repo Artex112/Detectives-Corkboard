@@ -27,6 +27,7 @@ recolorButton.addEventListener("click", () => {
 function toggleArrow(ignoreToggle) { //Putting this into a function allows me to toggle it whenever i need it.
     if(!ignoreToggle) {
         recolorButton.classList.toggle("recolor_enabled")
+        recolorButton.parentElement.classList.toggle("recolor_enabled")
     }
     if(recolorButton.classList.contains("recolor_enabled")) {
         arrow.innerText = " >";
