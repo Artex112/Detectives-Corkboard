@@ -25,7 +25,8 @@
             <ul><img class="text_btn" src="assets/icons_format/bold.png" title="Bold" alt="bold"></ul> 
             <ul><img class="text_btn" src="assets/icons_format/strikethrough.png" title="Strikethrough" alt="strikethrough"></ul> 
             <ul><img class="text_btn" src="assets/icons_format/underline.png" title="Underline" alt="underline"></ul></li>
-        </span> 
+        </span>
+        <span id="recolor"></span> 
     </div>
 
     <div class="Pictures">
@@ -60,6 +61,7 @@
 
     <span class="trash_icon">🗑️</span>
     <span class="pin_icon">📌</span>
+    <span class="brush_icon">🖌️</span>
 
     <div id="wrapper">
         <ul id="menu">
@@ -71,6 +73,15 @@
             </li>      
             <li class="menu_buttons" onclick="RemoveItem(['Notes','Pictures','String'])">Remove Item</li>
             <li class="menu_buttons" onclick="ConnectString(['Notes','Pictures'])">Connect String</li>
+            <li class="menu_buttons" id="recolorize_hover"><span id="recolorize">Recolor<span id="arrow"></span></span>
+                <ul id="color_menu">
+                    <li class="menu_buttons"></li>
+                    <li class="menu_buttons"></li>
+                    <li class="menu_buttons"></li>
+                    <li class="menu_buttons"></li>
+                    <li class="menu_buttons"></li>
+                </ul>
+            </li>
             <li class="deco_line"></li>
             <li class="menu_buttons" onclick="setVisibility(`#settings_wrapper`,'visible')">Settings</li>   
         </ul>
@@ -93,6 +104,7 @@
     <script src="scripts/changelog.js"></script>
     <script src="scripts/picture.js"></script>
     <script src="scripts/note.js"></script>
-    <script src="scripts/menu.js"></script>   
+    <script src="scripts/menu.js"></script>  
+    <script src="scripts/recolor.js"></script> 
 </body>
 </html>

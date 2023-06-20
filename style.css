@@ -231,7 +231,7 @@ body {
     position: absolute;
     top: 40%;
     left: 40%;
-    z-index: 99999;
+    z-index: 9999;
 }
 
 @counter-style setting_menu {
@@ -248,7 +248,7 @@ body {
 
 @counter-style menu {
     system: cyclic;
-    symbols: "📁" "🗑️" "📌" " " "⚙️";
+    symbols: "📁" "🗑️" "📌" "🖌️" " " "⚙️";
     suffix: "";
 }
 
@@ -306,29 +306,89 @@ body {
     border-radius: 3px;
     box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.212);
     visibility: hidden;
+    z-index: 2;
+}
+
+#color_menu {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    left: 98%;
+    top: -10%;
+    list-style-type: none;
+    width: 50px;
+    padding: 10px;
+    background-color: #f8fa99;
+    border-radius: 3px;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.212);
+    visibility: hidden;
+    z-index: 1;
+}
+
+#color_menu:active {
+    pointer-events: none;
+}
+
+#color_menu li {
+    background-color: #fa9999;
+    justify-self: center;
+    align-self: center;
+    width: 40px;
+    height: 40px;
+    margin-bottom: 5px;
+    border: solid #b3b46e 2px;
+    z-index: 1;
+}
+
+#color_menu li:hover {
+    border: solid #767749 2px;
+    pointer-events: all;
 }
 
 #new_item:hover #item_menu {
     visibility: visible;
 }
 
-.Removable {
+#recolorize {
+    background-color: transparent;
+    position: absolute;
+    padding-left: 30px;
+    left: 10px;
+    width: 77%;
+    height: auto;
+}
+
+.recolor_enabled:hover #color_menu {
+    visibility: visible;
+}
+
+.Removable, .Attachable, .Paintable {
     cursor: pointer;
     pointer-events: all !important;
 }
 
 .trash_icon,
-.pin_icon {
+.pin_icon,
+.brush_icon {
     visibility: hidden;
     position: absolute;
     left: 0px;
     top: 0px;
-    z-index: 9999;
+    z-index: 99999;
 }
 
 .tshow,
-.pshow {
+.pshow,
+.bshow {
     visibility: visible;
+}
+
+#recolor {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+    pointer-events: none;
 }
 
 .String {
@@ -556,3 +616,6 @@ body {
     text-decoration: underline;
     content: url(assets/icons_format/second_color/underline.png);
 }
+
+/* I want to make hannah proud of me, i really wonder if she would be for what i achieved so far.
+i really do miss her.. */

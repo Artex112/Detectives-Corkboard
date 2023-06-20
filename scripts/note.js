@@ -90,6 +90,14 @@ function attachListener(item) {
         }
     })
 
+    //Recolor function
+    item.addEventListener("click", function() {
+        if(item.classList.contains("Paintable")) {
+            const recolor = item.children[2]
+            recolor.style.backdropFilter = `hue-rotate(${hueAngles[currentColor]}deg)`
+        }
+    })
+
     //Element specfic functions
     if (item.classList.contains("Notes")) {
         preventFocusLoss(button);

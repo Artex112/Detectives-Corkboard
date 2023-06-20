@@ -3,9 +3,9 @@
     "update": {
         "date": "- 16.06.2023 -",
         "changes": [
-            "Added Changelog",
-            "Added Settings menu",
-            "tiny bit of tweaks here and there"
+            "Added Changelog.",
+            "Added Settings menu.",
+            "tiny bit of tweaks here and there."
         ]
     }
 },
@@ -13,9 +13,20 @@
     "update": {
         "date": "- 18.06.2023 -",
         "changes": [
-            "'Update logs' now load from a JSON file instead of being placed directly into HTML Code of the Website",
-            "Updated the look of Changelog Tab",
-            "Changelog Tab is now scrollable and wont overflow"
+            "'Update logs' now load from a JSON file instead of being placed directly into HTML Code of the Website.",
+            "Updated the look of Changelog Tab.",
+            "Changelog Tab is now scrollable and wont overflow."
+        ]
+    }
+},
+{   
+    "update": {
+        "date": "- 20.06.2023 -",
+        "changes": [
+            "Added a new Recolor tool, it allows user to change the color of invidual notes.",
+            "Tiny bit of tweaks in code again.",
+            "Better punctuation and grammar",
+            "Please report any bugs at the Github Repository (https://github.com/Artex112/Detectives-Corkboard)"
         ]
     }
 }
