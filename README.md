@@ -20,7 +20,7 @@ Plain Javascript, HTML and some CSS
 
 ## Roadmap
 - [x] Add Changelog Tab
-- [ ] Add custom colors for text and notes
+- [x] Add custom colors for notes
 - [ ] Add Zooming and panning
 - [ ] Add Advanced Settings menu for advanced customization
 - [ ] Download board as a single image
